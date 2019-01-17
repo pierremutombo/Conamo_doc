@@ -1,0 +1,17 @@
+HOW TO FLASH CONAMO ROOT OR CHILD BOARD == 
+
+
+
+The OpenWSN CONAMO firmware should be in the conamo-openwsn repository under the branch “final_version”
+And in this file
+https://github.com/imec-idlab/conamo-openwsn/blob/final_version/bsp/boards/openmote-cc2538/uart.c
+you see on lines 67-71 and 75-78
+lines that should be commented/uncommented depending on the board
+if you are using the openmotes (the purple ones), uncomment 67-71 (and comment the 75-78) and if you are using the red ones, uncomment 75-78 and comment 67-71
+
+// conamo list and connetected device
+https://docs.google.com/spreadsheets/d/1Snkrcjo7JUOY690acnO4CmmJd8KuKYxtY5fp3uzC_dQ/edit?usp=sharing
+
+
+//List of web site that can be useful for programming the nrf on the conamoboard
+http://anilarduino.blogspot.com/2017/07/nrf51-dk-with-arm-gcc-and-ubuntu.html
